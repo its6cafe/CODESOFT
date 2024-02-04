@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css2?family=Glass+Antiqua&display=swap');
+
+
+*{
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: transparent;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+header {
+    background-color: transparent;
+    padding: 15px;
+    width: 96vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #cdcccc;
+    top: 0;
+    position: absolute;
+    z-index: 1;
+}
+
+.logo {
+    font-size: 50px;
+    font-family: 'Glass Antiqua', cursive;
+    font-weight: bold;
+    color: #cdcccc;
+}
+
+nav {
+    display: flex;
+    gap: 30px;
+    justify-content: end;
+    z-index: 1;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+nav a {
+    text-decoration: none;
+    color: #cdcccc;
+}
+nav a:hover{
+    color: rgb(0, 0, 0);
+    font-display: inherit;
+}
+/*home section*/
+#home{
+    display: flex;
+    flex-direction: column;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7),
+                       rgba(0, 0, 0, 0.7)), url('https://i.pinimg.com/564x/59/3d/ec/593decee494b652c21d4af4d5b88a31d.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 700px;
+    justify-content: center;
+    align-items: center;
+    color: rgb(255, 255, 255);
+}
+#home::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 900px;
+    width: 100%;
+    z-index:1;
+    opacity: .10;
+}
+.main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 30%;
+    left: 60%;
+
+}
+#h1{
+    font-size: 5rem;
+    color: #cdcccc ;
+}
+.heading{
+    font-family: century;
+    font-size: 5rem;
+    text-align: center;
+    margin: 40px 1px;
+}
+.btn{
+    padding: 10px 35px;
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+    outline: none;
+    transition: .5s ease;
+    font-family: 'Courier New', Courier, monospace;
+}
+.btn:hover{
+    background-color: black;
+    box-shadow: 0 0 10px rgb(50, 104, 205);
+    font-weight: bold;
+}
+
+#about{
+    display: grid;
+    grid-template-rows: 30% 70%;
+    background-color: rgb(255, 255, 255);
+    box-sizing: border-box;
+    padding:30px;
+}
+
+#pic{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    border-radius: 20px;
+}
+#aboutimg{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#intro{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 0px;
+    padding-right: 60px;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 24px;
+}
+
+#service{
+    display:flex;
+    flex-direction: column;
+    padding: 20px;
+    background-color: rgb(255, 255, 255);
+
+
+}
+#ser{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+}
+.box{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 300px;
+    height: 300px;
+    border: 5px solid black;
+    margin: 10px;
+    align-items: center;
+    text-align: justify;
+    padding: 10px;
+    border-radius: 10px;
+    background-color:black;
+    background-size: 100% 200%;
+    transition: all .5s;
+    color: white;
+    
+}
+.box:hover{
+    background-position: center;
+    box-shadow:0  0 40px rgb(50, 104, 205);
+    color:rgb(255, 255, 255);
+}
+#boxh1{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    gap: 20px;
+}
+#boxh1 > img{
+    width: 85px;
+    height: 85px;
+
+    padding: 10px;
+}
+#contact{
+    display:flex;
+    flex-direction: column;
+    padding: 20px;
+    background-color: rgb(255, 252, 252);
+
+}
+.icons{
+    display: flex;
+    justify-content:center;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    padding: 30px;
+    align-items:center;
+    justify-content: baseline;
+    gap: 10px;
+}
+
+footer {
+    background-color: #000000;
+    color:white;
+    padding: 10px;
+    text-align: center;
+}
+  
+.copyright {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+  
+.copyright span {
+    font-size: 1.2em;
+    margin-right: 5px;
+}
+
+/*about for tablet */
+
+
+
